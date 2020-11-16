@@ -1,0 +1,26 @@
+img{
+    width: 250px;
+    height: 250px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    
+    border: 1px solid black;
+}
+
+h1{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    color: green;
+}
+
+h2{
+    color: rgb(38, 115, 126);
+}

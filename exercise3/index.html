@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<title>Web Store</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+      </head>
+    <body>
+        <div>
+            <h1>Magical Store</h1>
+        </div>
+        <form action="customerBackend.php" method="post" id="orderForm" onsubmit="return validateForm();">
+            <ul>
+                <li>
+                    <h3>Customer Login Information</h3>
+                    <div>
+                        <label for="user">User E-mail:</label>
+                        <input type="email" id="user" name="email" placeholder="user@example.com">
+
+                    </div>
+                    <div>
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="password" required>
+                    </div>
+                </li>
+                <li>
+                    <h3>Shipping</h3>
+                    <div>
+                        <img id="grade" src="images/grade.png">
+                        <p>The grade of a course becomes A ($1,000 each)</p>
+                        <input type="number" id="course" name="course" placeholder="Quantity" min="0" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="grade" src="images/grade.png">
+                        <p>The result of an exam becomes A ($100 each)</p>
+                        <input type="number" id="exam" name="exam" placeholder="Quantity" min="0" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="grade" src="images/grade.png">
+                        <p>The grade of one assignment becomes A ($10 each)</p>
+                        <input type="number" id="assignment" name="assignment" placeholder="Quantity" min="0" required>
+                    </div>
+                </li>
+                <li>
+                    <h3>Shipping Options</h3>
+                    <input type="radio" name="ship" id="fso" value="f"/>
+                    <label for="fso">7 Days - Free!</label>
+                    <input type="radio" name="ship" id="oso" value="o"/>
+                    <label for="oso">Overnight - $50.00</label>
+                    <input type="radio" name="ship" id="tso" value="t"/>
+                    <label for="tso">3 Day - $5.00</label>
+                </li>
+            </ul>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <script type="text/javascript" src="formChecker.js"></script>
+    </body>
+</html>
